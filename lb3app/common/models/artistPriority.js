@@ -1,0 +1,15 @@
+// artistPriority.js
+
+module.exports = function(ArtistPriority){
+
+
+    ArtistPriority.greet = function(msg, cb) {
+      cb(null, 'Greetings... ' + msg);
+    }
+
+    ArtistPriority.remoteMethod('greet', {
+          accepts: {arg: 'msg', type: 'string'},
+          returns: {arg: 'greeting', type: 'string'}
+    });
+};
+

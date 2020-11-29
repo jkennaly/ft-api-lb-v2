@@ -1,0 +1,8 @@
+{
+  "name": "Core",
+  "plural": "Core",
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
