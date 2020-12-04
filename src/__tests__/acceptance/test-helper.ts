@@ -1,4 +1,5 @@
-import {FestigramApiLbV2Application} from '../..';
+
+import {FestigramApiLbV2Application} from '../../application';
 import {
   createRestAppClient,
   givenHttpServerConfig,

@@ -13,6 +13,14 @@ import {Lb3AppBooterComponent} from '@loopback/booter-lb3app';
 
 export {ApplicationConfig};
 
+import {AuthenticationComponent} from '@loopback/authentication';
+import {
+  JWTAuthenticationComponent,
+  SECURITY_SCHEME_SPEC,
+  UserServiceBindings,
+} from '@loopback/authentication-jwt';
+import {MemDataSource} from './datasources';
+
 export class FestigramApiLbV2Application extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
@@ -31,6 +39,12 @@ export class FestigramApiLbV2Application extends BootMixin(
     });
     this.component(RestExplorerComponent);
     this.component(Lb3AppBooterComponent);
+    // Mount authentication system
+    this.component(AuthenticationComponent);
+    // Mount jwt component
+    this.component(JWTAuthenticationComponent);
+    // Bind datasource
+    this.dataSource(MemDataSource, UserServiceBindings.DATASOURCE_NAME);
 
     this.projectRoot = __dirname;
     // Customize @loopback/boot Booter Conventions here
@@ -41,6 +55,9 @@ export class FestigramApiLbV2Application extends BootMixin(
         extensions: ['.controller.js'],
         nested: true,
       },
+        lb3app: {
+          mode: 'fullApp',
+        },
     };
   }
 }

@@ -1,0 +1,6 @@
+{
+  "events": {
+    "start": "clear"
+  },
+  "ext": "js,json,ts"
+}

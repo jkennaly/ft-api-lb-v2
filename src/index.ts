@@ -1,25 +1,21 @@
-import {ApplicationConfig, FestigramApiLbV2Application} from './application';
+import {ApplicationConfig} from '@loopback/core';
+import {ExpressServer} from './server';
 
-export * from './application';
+export {ApplicationConfig, ExpressServer};
 
 export async function main(options: ApplicationConfig = {}) {
-  const app = new FestigramApiLbV2Application(options);
-  await app.boot();
-  await app.start();
-
-  const url = app.restServer.url;
-  console.log(`Server is running at ${url}`);
-  console.log(`Try ${url}/ping`);
-
-  return app;
+  const server = new ExpressServer(options);
+  await server.boot();
+  await server.start();
+  console.log(`Server is running at ${server.url}`);
 }
 
 if (require.main === module) {
   // Run the application
   const config = {
     rest: {
-      port: +(process.env.PORT ?? 3000),
-      host: process.env.HOST,
+      port: +(process.env.PORT ?? 8080),
+      host: process.env.HOST ?? 'localhost',
       // The `gracePeriodForClose` provides a graceful close for http/https
       // servers with keep-alive clients. The default value is `Infinity`
       // (don't force-close). If you want to immediately destroy all sockets
@@ -30,6 +26,7 @@ if (require.main === module) {
         // useful when used with OpenAPI-to-GraphQL to locate your application
         setServersFromRequest: true,
       },
+      listenOnStart: false,
     },
   };
   main(config).catch(err => {

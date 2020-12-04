@@ -41,111 +41,111 @@
     "public": true
   },
   "Message": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "MessagesMonitor": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Image": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Series": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Festival": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Date": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Day": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Set": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Venue": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Organizer": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Place": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Lineup": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "ArtistPriority": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "StagePriority": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "StageLayout": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "PlaceType": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Artist": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "ParentGenre": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Genre": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "ArtistGenre": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "ArtistAlias": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Profile": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "MessageType": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "SubjectType": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Intention": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Flag": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   },
   "Interaction": {
-    "dataSource": "DragonAgeFestivalMaster",
+    "dataSource": "FestivalMaster",
     "public": true
   }
 }

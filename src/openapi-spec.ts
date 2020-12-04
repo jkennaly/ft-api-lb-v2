@@ -7,7 +7,7 @@ import {FestigramApiLbV2Application} from './application';
 async function exportOpenApiSpec(): Promise<void> {
   const config: ApplicationConfig = {
     rest: {
-      port: +(process.env.PORT ?? 3000),
+      port: +(process.env.PORT ?? 8080),
       host: process.env.HOST ?? 'localhost',
     },
   };
@@ -16,6 +16,7 @@ async function exportOpenApiSpec(): Promise<void> {
   await app.boot();
   await app.exportOpenApiSpec(outFile);
 }
+
 
 exportOpenApiSpec().catch(err => {
   console.error('Fail to export OpenAPI spec from the application.', err);

@@ -1,5 +1,5 @@
 import {Client} from '@loopback/testlab';
-import {FestigramApiLbV2Application} from '../..';
+import {FestigramApiLbV2Application} from '../../application';
 import {setupApplication} from './test-helper';
 
 describe('HomePage', () => {

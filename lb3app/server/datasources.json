@@ -1,1 +1,16 @@
-{"db":{"name":"db","connector":"memory"},"local":{"host":"127.0.0.1","port":3306,"user":"festigram","password":"festigram","database":"festigram","name":"local","connector":"mysql","connectionLimit":8}}
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "local": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "festigram",
+    "password": "festigram",
+    "name": "local",
+    "user": "festigram",
+    "connector": "mysql",
+    "connectionLimit": 8
+  }
+}

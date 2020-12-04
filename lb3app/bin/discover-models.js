@@ -9,7 +9,7 @@ const writeFile = promisify(fs.writeFile);
 const readFile = promisify(fs.readFile);
 const mkdirp = promisify(require('mkdirp'));
 
-const DATASOURCE_NAME = 'DragonAgeFestivalMaster';
+const DATASOURCE_NAME = 'FestivalMaster';
 const dataSourceConfig = require('../server/datasources.json');
 const db = new loopback.DataSource(dataSourceConfig[DATASOURCE_NAME]);
 
